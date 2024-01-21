@@ -1,0 +1,214 @@
+/* ############/ Roots & Global Rules /############ */
+:root {
+  scroll-behavior: auto;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-35 {
+  font-size: 35px;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.max-width {
+  max-width: 700px;
+}
+
+.fColorB {
+  color: #444444;
+}
+
+.fColorT {
+  color: #777777;
+}
+
+.mColor {
+  color: #d62e33;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+/* =================/ start landing /================= */
+header {
+  background: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)),
+    url("../Images/Home.jpg") center center / cover;
+  color: #fff;
+  position: relative;
+}
+
+header .leftMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  color: #fff;
+}
+
+header .leftMenu i {
+  cursor: pointer;
+}
+
+header .leftMenu ul li {
+  margin-top: 30px;
+  padding-block: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+header .leftMenu ul li:hover,
+header .leftMenu i:hover {
+  color: #601c1e;
+}
+
+header .rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header .rightSide h2 {
+  font-size: 60px;
+}
+
+header .openBox {
+  font-size: 25px;
+  width: 95%;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+header .openBox i {
+  cursor: pointer;
+}
+
+/* =================/ Start Section Duration /================= */
+#duration .detailsTitle {
+  background-color: #e68285;
+  color: #fff;
+  width: 85%;
+  margin: 0 !important;
+  padding-block: 10px;
+  cursor: pointer;
+}
+
+#duration .detailsBox {
+  background-color: #cccccc;
+  width: 85%;
+  display: none;
+  padding: 15px;
+}
+/* =================/ Start Section Details /================= */
+#details {
+  background: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)),
+    url("../Images/invitation.jpg") center center / cover;
+  color: #fff;
+}
+
+#details .counter {
+  border: 1px solid #fff;
+  font-size: 30px;
+  padding: 25px 10px;
+  height: 100%;
+}
+
+/* =================/ start Footer /================= */
+
+footer .colContent ul li {
+  border: 1px solid #777777;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .colContent ul li:hover {
+  background-color: #d62e33;
+  color: #fff;
+  border-color: transparent;
+}
+
+footer form .textLimit {
+  position: absolute;
+  z-index: 11;
+  right: 10%;
+  margin-top: 10px;
+}
+
+footer .messageAlert {
+  display: none;
+  color: #d62e33;
+}
+/* ############/ Start Media Query /############ */
+
+@media screen and (max-width: 992px) {
+  footer .messageAlert {
+    margin-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header .leftMenu ul li {
+    font-size: 15px;
+  }
+
+  header .rightSide h2 {
+    font-size: 30px;
+  }
+
+  header .rightSide .openBox {
+    font-size: 20px;
+  }
+
+  #duration .detailsTitle {
+    width: 90%;
+  }
+
+  #duration .detailsBox {
+    width: 90%;
+  }
+}
